@@ -1,0 +1,39 @@
+/**
+ * @(#)NgResendez003PA3.java
+ * @author Raymond Ng
+ * @version 1.00 2021/11/13 9:00AM
+ *
+ * PROGRAM PURPOSE: Program accepts a customer's
+ * orders for hammocks. The customer gets a discount
+ * based on the order total (size). A sales receipt
+ * will be generated. Additionally, a hammock sales
+ * report will be generated and writes hammock sales
+ * records to a file. Further, program will check 
+ * if records have been written.
+ */
+
+import java.io.IOException; //By Raymond Ng: Signals that an I/O exception of some sort has occurred
+
+/**
+ * By Raymond Ng: This class acts as a the runner of the application
+ * as it contains the main method
+ */
+public class NgResendez003PA3 
+{
+    /**
+     * By Raymond Ng: Entry point of the application
+     * during runtime
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String args[]) throws IOException 
+    {
+        SalesSystem system = new SalesSystem(); //By Raymond Ng: Creates an instance of SalesSystem class
+        
+        system.start(); //By Raymond Ng: Calls start method from SalesSystem class
+        
+        System.exit(0); //By Raymond Ng: Exits the program
+        
+    }//By Raymond Ng: END main()
+    
+}//By Raymond Ng: END NgResendez003PA3
